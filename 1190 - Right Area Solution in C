@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+int row,col,px=11,py=7;
+double N[12][12],sum=0,avg;
+
+char ch[2];
+scanf("%s",&ch);
+for(row=0;row<12;row++){
+    for(col=0;col<12;col++){
+        scanf("%lf",&N[row][col]);
+    }
+
+}
+
+
+for(row=1;row<=5;row++){
+    for(col=px;col<=11;col++){
+        sum=sum+N[row][col];
+    }
+    px--;
+}
+
+for(row=6;row<=11;row++){
+    for(col=py;col<=11;col++){
+        sum=sum+N[row][col];
+    }
+    py++;
+}
+
+if(ch[0]=='S'){
+    printf("%.1lf\n",sum);
+}else if(ch[0]=='M'){
+  avg=sum/30.0;
+  printf("%.1lf\n",avg);
+}
+return 0;
+}
