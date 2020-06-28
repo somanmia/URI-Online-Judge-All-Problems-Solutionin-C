@@ -1,0 +1,11 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+   int n,m,re;
+   scanf("%d",&n);
+   scanf("%d",&m);
+  re=n-m;
+  printf("%d\n",re);
+    return 0;
+}
