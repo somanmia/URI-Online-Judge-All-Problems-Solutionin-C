@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+ int N[1000],T,i,j,ck;
+ scanf("%d",&T);
+ ck=0;
+ for(i=0;i<1000;i++){
+    printf("N[%d] = %d\n",i,ck);
+    ck++;
+   if(ck==T){
+    ck=0;
+   }
+ }
+
+return 0;
+}
