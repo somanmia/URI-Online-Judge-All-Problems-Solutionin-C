@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+ int i,j,ck,n,root,num;
+ scanf("%d",&n);
+ for(i=1;i<=n;i++){
+     scanf("%d",&num);
+      root=sqrt(num);
+     ck=0;
+     for(j=2;j<=root;j++){
+         if(num%j==0){
+             ck++;
+             break;
+         }
+     }if(ck==0){
+         printf("Prime\n");
+     }else{
+         printf("Not Prime\n");
+     }
+ }
+ 
+    return 0;
+}
