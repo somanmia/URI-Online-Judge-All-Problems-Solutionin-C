@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+int d1,h1,m1,s1,d2,h2,m2,s2,duration,day,hour,munit,second,ts1,ts2;
+scanf("%*s %d",&d1);
+scanf("%d %*s %d %*s %d",&h1,&m1,&s1);
+
+scanf("%*s %d",&d2);
+scanf("%d %*s %d %*s %d",&h2,&m2,&s2);
+
+ts1=(s1+(m1*60)+(h1*3600)+(d1*86400));
+ts2=(s2+(m2*60)+(h2*3600)+(d2*86400));
+
+duration=ts2-ts1;
+
+day=duration/86400;
+duration=duration%86400;
+
+hour=duration/3600;
+duration=duration%3600;
+
+munit=duration/60;
+second=duration%60;
+
+printf("%d dia(s)\n",day);
+printf("%d hora(s)\n",hour);
+printf("%d minuto(s)\n",munit);
+printf("%d segundo(s)\n",second);
+
+
+return 0;
+}
