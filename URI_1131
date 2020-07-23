@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main(){
+    int x,y,test;
+int inter_win=0,gremio_win=0,match_draw=0,total_match=0;
+while(1){
+    scanf("%d %d",&x,&y);
+    total_match++;
+    printf("Novo grenal (1-sim 2-nao)\n");
+    if(x>y){
+        inter_win++;
+    }else if(x<y){
+        gremio_win++;
+    }else if(x==y){
+        match_draw++;
+    }
+        scanf("%d",&test);
+        if(test==1){
+            continue;
+
+        }else{
+         break;
+
+    }
+
+
+}
+
+
+
+
+ //printing outpur------------------//
+    printf("%d grenais\n",total_match);
+    printf("Inter:%d\n",inter_win);
+    printf("Gremio:%d\n",gremio_win);
+    printf("Empates:%d\n",match_draw);
+   if(inter_win>gremio_win){
+       printf("Inter venceu mais\n");
+   }else if(gremio_win>inter_win){
+       printf("Gremio venceu mais\n");
+   }else{
+      printf("Não houve vencedor\n");
+   }
+
+
+
+
+
+
+
+return 0;
+}
