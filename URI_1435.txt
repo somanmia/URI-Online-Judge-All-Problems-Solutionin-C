@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main(){
+int mid,a,b,row,N,col,i,j;
+while(1){
+    scanf("%d",&N);
+    if(N==0){
+        break;
+    }
+    int arr[N][N];
+    mid=N/2;
+    if(N%2==1){
+        mid++;
+    }
+    a=0;
+    b=N;
+    for(row=1;row<=mid;row++){
+           for(i=a;i<b;i++){
+              for(j=a;j<b;j++){
+                   arr[i][j]=row;
+
+              }
+
+           }
+           a++;
+           b--;
+    }
+    //printing-------//
+    for(row=0;row<N;row++){
+        for(col=0;col<N;col++){
+           if(col==0){
+              printf("%3d",arr[row][col]);
+
+           }else{
+            printf(" %3d",arr[row][col]);
+           }
+        }printf("\n");
+    }
+    printf("\n");
+
+}
+
+return 0;
+}

@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main(){
+int row,col,n,i,j,k;
+while(1){
+    scanf("%d",&n);
+    if(n==0){
+        break;
+    }
+  int arr[n][n];
+  for(row=0;row<n;row++){
+        j=row+1;
+        k=2;
+      for(col=0;col<=row;col++){
+          arr[row][col]=j;
+           j--;
+      }
+      for(col=row+1;col<n;col++){
+          arr[row][col]=k;
+          k++;
+      }
+
+  }
+
+  for(row=0;row<n;row++){
+     for(col=0;col<n;col++){
+         if(col==0)printf("%3d",arr[row][col]);
+         else
+            printf(" %3d",arr[row][col]);
+     }
+     printf("\n");
+  }
+  printf("\n");
+}
+
+
+}
