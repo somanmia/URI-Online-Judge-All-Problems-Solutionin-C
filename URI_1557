@@ -1,0 +1,95 @@
+#include<stdio.h>
+int main(){
+int row,col,i,j,k,n,s;
+
+for(;;){
+    scanf("%d",&n);
+    if(n==0){
+    break;
+    }
+    int arr[n][n];
+     s=1;
+    for(row=0;row<n;row++){
+        k=s;
+        for(col=0;col<n;col++){
+             arr[row][col]=k;
+              k=k+k;
+        }
+         s=s+s;
+    }
+    for(row=0;row<n;row++){
+        for(col=0;col<n;col++){
+            if(n==1){
+                printf("%d",arr[row][col]);
+            }else if(n==2){
+                if(col==0){
+                    printf("%d",arr[row][col]);
+                }else{
+                 printf(" %d",arr[row][col]);
+                }
+            }else if(n==3 || n==4){
+                 if(col==0){
+                    printf(" %d",arr[row][col]);
+                 }else{
+                   printf("%3d",arr[row][col]);
+                 }
+            }else if(n==5){
+                 if(col==0){
+                     printf("%3d",arr[row][col]);
+                 }else{
+                  printf(" %3d",arr[row][col]);
+                 }
+            }else if(n==6 || n==7){
+                if(col==0){
+                      printf(" %3d",arr[row][col]);
+                }else{
+                      printf(" %4d",arr[row][col]);
+                }
+            }else if(n==8 || n==9){
+                if(col==0){
+                     printf(" %4d",arr[row][col]);
+                }else{
+                     printf(" %5d",arr[row][col]);
+                }
+            }else if(n==10){
+                if(col==0){
+                     printf(" %5d",arr[row][col]);
+                }else{
+                     printf(" %6d",arr[row][col]);
+                }
+            }else if(n==11 || n==12){
+                if(col==0){
+                     printf(" %6d",arr[row][col]);
+                }else{
+                     printf(" %7d",arr[row][col]);
+                }
+            }else if(n==13 || n==14){
+                if(col==0){
+                    printf(" %7d",arr[row][col]);
+                }else{
+                   printf(" %8d",arr[row][col]);
+                }
+            }else if(n==15){
+                if(col==0){
+                    printf(" %8d",arr[row][col]);
+                }else{
+                   printf(" %9d",arr[row][col]);
+                }
+            }
+
+
+        }printf("\n");
+    }
+printf("\n");
+
+
+}
+
+
+
+
+
+
+
+return 0;
+}
