@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+int employ_id,works_hour;
+float per_hour_amount,result;
+scanf("%d %d %f",&employ_id,&works_hour,&per_hour_amount);
+result=works_hour*per_hour_amount;
+printf("NUMBER = %d\n",employ_id);
+printf("SALARY = U$ %.2f\n",result);
+return 0;
+}
