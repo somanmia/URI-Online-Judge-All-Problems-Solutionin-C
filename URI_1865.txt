@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+int n,number,i;
+char ch[100];
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+    scanf("%s %d",&ch,&number);
+    int x=strcmp(ch,"Thor");
+    if(x==0){
+        printf("Y\n");
+    }else{
+        printf("N\n");
+    }
+}
+
+
+
+
+
+return 0;
+}
