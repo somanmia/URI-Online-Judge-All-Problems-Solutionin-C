@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+int X;
+while(scanf("%d",&X)!=EOF){
+    printf("%d minutos\n",X*2);
+}
+return 0;
+}

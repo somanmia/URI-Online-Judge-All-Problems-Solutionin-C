@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int spend_hour,total_km;
+double fuel_cost;
+while(scanf("%d %d",&spend_hour,&total_km)!=EOF){
+    fuel_cost=(total_km/12.0)*spend_hour;
+    printf("%.3lf\n",fuel_cost);
+}
+
+return 0;
+}

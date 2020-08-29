@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+int userinput_second,watch_hour,watch_min,watch_second;
+while(scanf("%d",&userinput_second)!=EOF){
+    watch_hour=userinput_second/3600;
+    userinput_second=userinput_second%3600;
+
+    watch_min=userinput_second/60;
+    userinput_second=userinput_second%60;
+
+    watch_second=userinput_second;
+
+    printf("%d:%d:%d\n",watch_hour,watch_min,watch_second);
+}
+return 0;
+}

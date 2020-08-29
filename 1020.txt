@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+int userinput_day,days,months,years;
+while(scanf("%d",&userinput_day)!=EOF){
+    years=userinput_day/365;
+    userinput_day=userinput_day%365;
+
+    months=userinput_day/30;
+    userinput_day=userinput_day%30;
+
+    days=userinput_day;
+
+    printf("%d ano(s)\n",years);
+    printf("%d mes(es)\n",months);
+    printf("%d dia(s)\n",days);
+}
+
+
+
+
+
+return 0;
+}
