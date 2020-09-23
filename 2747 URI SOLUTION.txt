@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+int row,col;
+for(row=1;row<=7;row++){
+    for(col=1;col<=39;col++){
+        if(row==1 || row==7){
+            printf("-");
+        }else if(col==1 || col==39){
+           printf("|");
+        }else{printf(" ");}
+    }
+    printf("\n");
+}
+
+
+return 0;
+}
